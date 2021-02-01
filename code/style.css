@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER AREA */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(228, 239, 224, 0.1), rgba(244, 244, 244, 1)), url("assets/Leaves-background.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.socialmedia-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+
+/* Container for social media icons for both the top and bottom of page */
+.sm-icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 179, 26);
+    padding: 21px;
+    object-fit: cover;  
+}
+
+.sm-icon-container:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.top-sm-container {
+    margin-top: 20px;
+    margin-right: 10px; 
+}
+
+.bottom-sm-container {
+    margin-top: 10px;
+}
+
+.sm-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: -10px;
+    margin-top: -11px;
+}
+
+.header-text-container {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 20px 10px;
+    border-radius: 2px;
+}
+
+.portfolio {
+    font-weight: 400;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 10px;
+}
+
+.name {
+    font-weight: 700;
+    margin: 0 20px 0 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 10px;
+}
+
+.headertext-one {
+    width: 210px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+}
+
+.headertext-two {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.profile-image-container {
+    margin-top: 50px;
+}
+
+.profile-image {
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 179, 26);
+    margin-left: 140px;
+    margin-top: -50px;
+    object-fit: contain;
+}
+
+/* Classes for summary, tech, projects, for more, my thoughts and skills sections */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.grey-background {
+    background: rgb(244, 244, 244);
+}
+
+.white-background {
+    background: rgb(255, 255, 255);
+}
+
+.green-background {
+    background: rgb(170, 219, 189);
+}
+
+/* SUMMARY SECTION */
+.summary-text {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.cylinder {
+    width: 40px;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(255, 179, 26);
+    display: inline-block;
+    margin-bottom: 5px;   
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background: rgb(255, 179, 26);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Main title for each main title on each section */
+.main-title {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: rgb(108, 184, 137);
+    padding: 10px;
+    margin: 10px 0;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* TECH SECTION */
+.tech-details-container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tech-details-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 2;
+}
+
+/* PROJECT SECTION */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.project-image-container {
+    position: relative;
+    text-align: center;
+    transition: 0.5s ease;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 250px;
+}
+
+.project-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 25, 25, 0.3);
+    transition: 0.5s ease;
+}
+
+.project-image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-image-container:hover {
+    color: transparent;
+}
+
+.project-image-overlay:hover {
+    background-color: transparent;
+}
+
+/* Class that hides the 3rd and 4th project cards on the mobile view */
+.hide-one {
+    display: none;
+}
+
+/* OTHER PROJECTS */
+.row-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.other-projects-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.other-projects-card a {
+    text-decoration: none;
+}
+
+.other-projects-text:hover {
+    text-decoration: underline;
+}
+
+.project-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+.project-text:hover {
+    text-decoration: underline;
+}
+
+.text-highlight {
+    color: rgb(255, 179, 26);
+    font-weight: 700;
+    line-height: 2;
+}
+
+.small-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-tags p {
+    background:rgb(170, 219, 189);
+    color: rgb(255, 255, 255);
+    padding: 5px; 
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-right: 13px;
+    margin-top: 15px;
+}
+
+/* MY THOUGHTS SECTION */
+.extra-details {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.thoughts-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;   
+}
+
+.thoughts-text:hover {
+    text-decoration: underline;
+}
+
+/* Hides the second card in the thoughts section on mobile view */
+.hide-two {
+    display: none;
+}
+
+.thoughts-date {
+    color: rgb(255, 179, 26);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.thoughts-title {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.thoughts-text {
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.other-thoughts-card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.other-thoughts-card a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* SKILLS SECTION */
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-card {
+    width: 170px;
+    padding: 10px;
+    margin-right: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.skills-card h4 {
+    font-weight: 700;
+    color: rgb(255, 179, 26);
+    margin-bottom: 3px;
+}
+
+.skills-card ul {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-card li {
+    padding-bottom: 10px;
+}
+
+/* FOR MORE SECTION */
+.formore-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.icon-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color:  rgb(255, 179, 26);
+}
+
+/* FOOTER */
+footer div {
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.main-title-footer {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+@media(max-width: 377px) {
+    .socialmedia-container {
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .socialmedia-container {
+        margin-left: 400px;
+    }
+
+    .sm-icon-container {
+        width: 60px;
+        height: 60px;
+        padding: 19px;   
+    }
+
+    .sm-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: -5px;
+        margin-top: -7px;
+    }
+    
+    .profile-image {
+        width: 180px;
+        height: 180px;
+        margin-left: 200px;
+    }
+
+    .header-text {
+        font-size: 21px;
+    }
+    
+    .headertext-one {
+        font-size: 50px;
+    }
+    
+    .headertext-two {
+        font-size: 33px;
+        margin-top: 5px;
+    }
+
+    .summary-text {
+        width: 60%;
+        font-size: 20px;
+    }
+
+    .tech-details-description {
+        font-size: 20px;
+    }
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        font-size: 22px;
+    }
+
+    .project-text {
+        font-size: 20px;
+    }
+
+    .small-tags p {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    .other-projects-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Shows the last two project cards that were hidden in the mobile view */
+    .hide-one {
+        display: block;
+    }
+
+    /* Hides the other projects row-container in tablet & desktop view */
+    .hide-three {
+        display: none;
+    }
+
+    /* Extra details that are different between the sections for the card class */
+    .extra-details{
+        font-size: 20px;
+    }
+
+    .other-thoughts-card, .skills-card, .footer-name, footer p {
+        font-size: 20px;
+    }
+
+    /* Shows the second card in the my thoughts section which is not visible in mobile view */
+    .hide-two {
+        display: block;
+    } 
+
+    /* Hides the other thoughts row container which were visible for the mobile view */
+    .hide-four {
+        display: none;
+    }
+    
+    .tech-details-container, .formore-container  {
+        width: 60%;
+    }
+
+    .icon-container {
+        width: 150px;
+    }
+
+    .icon-container p {
+        font-size: 16px;
+    }
+
+    .footer div {
+        width: 60%;
+    } 
+}
+
+@media (min-width: 1024px) {
+    .card{
+        max-width: 40%;
+    }
+
+    .sm-icon-container {
+        margin-top: 50px;
+        width: 70px;
+        height: 70px;
+        padding: 19px;
+    }
+
+    .sm-icon {
+        width: 38px;
+        height: 38px;
+        margin-left: -5px;
+        margin-top: -6px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+        margin-left: 330px;
+        margin-top: -100px;
+    }
+
+    .header-text {
+        font-size: 22px;        
+    }
+    
+    .headertext-one {
+        font-size: 58px;
+        margin-right: 200px;
+        width: 500px;
+    }
+    
+    .headertext-two {
+        font-size: 42px;
+    }
+
+    .formore-container {
+        width: 40%;
+    }
+}
